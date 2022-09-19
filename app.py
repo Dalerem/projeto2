@@ -5,26 +5,46 @@ import requests
 
     Autohr: Dálerem Teixeira
     E-mail: dalerem2022@gmail.com
-    Linkedin: https://www.linkedin.com/in/d%C3%A1lerem-teixeira-949a48236/
+    Rede_social: https://www.linkedin.com/in/d%C3%A1lerem-teixeira-949a48236/
 """
 
-__Author__ = "Dálerem Teixeira"
+__author__ = "Dálerem Teixeira"
 __Email__ = "dalerem2022@gmail.com"
-__Linkedin__ = "https://www.linkedin.com/in/d%C3%A1lerem-teixeira-949a48236/"
+__redesocial__ = "https://www.linkedin.com/in/d%C3%A1lerem-teixeira-949a48236/"
 
 class Requisicao_api:
     """
         Classe de Requisição de api
     """
     def __init__(self, cot):
+        """
+            Construtor de cotas
+
+        :param cot: valor para cotas
+        """
         self.cot = cot
     def dolar(self):
+        """
+            Função de cota do dolar
+
+        :return: valor da cota
+        """
         cotacao_dolar = self.cot["USDBRL"]["bid"]
         return cotacao_dolar
     def euro(self):
+        """
+            Função de cota do euro
+
+        :return: valor da cota
+        """
         cotacao_euro = self.cot["EURBRL"]["bid"]
         return cotacao_euro
     def btc(self):
+        """
+            Função do btc
+
+        :return: valor da cota
+        """
         cotacao_btc = self.cot["BTCBRL"]["bid"]
         return cotacao_btc
 
