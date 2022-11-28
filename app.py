@@ -19,14 +19,12 @@ class Requisicao_api:
     def __init__(self, cot):
         """
             Construtor de cotas
-
         :param cot: valor para cotas
         """
         self.cot = cot
     def dolar(self):
         """
             Função de cota do dolar
-
         :return: valor da cota
         """
         cotacao_dolar = self.cot["USDBRL"]["bid"]
@@ -34,7 +32,6 @@ class Requisicao_api:
     def euro(self):
         """
             Função de cota do euro
-
         :return: valor da cota
         """
         cotacao_euro = self.cot["EURBRL"]["bid"]
@@ -42,7 +39,6 @@ class Requisicao_api:
     def btc(self):
         """
             Função do btc
-
         :return: valor da cota
         """
         cotacao_btc = self.cot["BTCBRL"]["bid"]
